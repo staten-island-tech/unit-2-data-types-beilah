@@ -20,10 +20,23 @@ print(values[0])
 print(values[5])
 
 "test"
-["t","e","s","t"]"""
+["t","e","s","t"]
 
 x = "this is a thing"
 y = x.split()
 z = y[0]
 print(y)
 print(z)
+
+sentence_input = input("Give me a sentence, please. ") # Asks for a sentence
+
+# Function to count words
+def count_words(sentence):
+    words = sentence.split() # Split the sentence into words
+    return len(words)       # Count the words
+
+# Get word count and print
+word_count = count_words(sentence_input) #Call the function with the user's sentence
+print(f"This sentence contains {word_count} words. ") # Print result"""
+
+sentence_input = input("Give me a noun.")
