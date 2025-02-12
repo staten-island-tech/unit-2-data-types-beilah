@@ -28,6 +28,7 @@ z = y[0]
 print(y)
 print(z)
 
+# Challenge #1
 sentence_input = input("Give me a sentence, please. ") # Asks for a sentence
 
 # Function to count words
@@ -37,6 +38,33 @@ def count_words(sentence):
 
 # Get word count and print
 word_count = count_words(sentence_input) #Call the function with the user's sentence
-print(f"This sentence contains {word_count} words. ") # Print result"""
+print(f"This sentence contains {word_count} words. ") # Print result
 
-sentence_input = input("Give me a noun.")
+# Mad Libs Project
+noun = input("Give me a noun.")
+verb = input("Give me a verb.")
+verb_2 = input("Give me a second verb.")
+number = input("Give me a number.")
+guest = input("Give me a celebrity guest.")
+
+print(f"{guest} was at the {noun} shop, {verb} around. Paparazi {verb_2} them around. In just {number} licks of their {noun}, the paparazi had already found them!")
+
+day_of_week = input("what day is it? ")
+if day_of_week == "Friday":
+    print("correct")
+else:
+    print("incorrect")
+
+number = int(input("Give me a number, please. "))
+if number % 2 == 1:
+    print('Odd')
+elif number % 2 == 0:
+    print('Even')"""
+
+service  = input("How was the service? ")
+if service == 'bad':
+    print('0% tip')
+elif service == 'okay':
+    print('15%')
+elif service == '20%':
+    print('20%')
