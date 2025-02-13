@@ -59,12 +59,22 @@ number = int(input("Give me a number, please. "))
 if number % 2 == 1:
     print('Odd')
 elif number % 2 == 0:
-    print('Even')"""
+    print('Even')
 
 service  = input("How was the service? ")
 if service == 'bad':
     print('0% tip')
 elif service == 'okay':
     print('15%')
-elif service == '20%':
+elif service == 'good':
     print('20%')
+elif service == 'great':
+    print('25%')"""
+
+integer = int(input("Give me an integer. "))
+def function(integer):
+    int_list = []
+    print(list)
+    for i in range(integer):
+        print(integer(i)) 
+function(integer)
