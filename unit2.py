@@ -73,8 +73,8 @@ elif service == 'great':
 
 integer = int(input("Give me an integer. "))
 def function(integer):
-    int_list = []
-    print(list)
-    for i in range(integer):
-        print(integer(i)) 
+    int_list = [1,2,3,4,5,6]
+    print(int_list)
+    for i in (int_list):
+        print(i) 
 function(integer)
