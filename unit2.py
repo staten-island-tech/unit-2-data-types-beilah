@@ -69,7 +69,7 @@ elif service == 'okay':
 elif service == 'good':
     print('20%')
 elif service == 'great':
-    print('25%')"""
+    print('25%')
 
 integer = int(input("Give me an integer. "))
 def factor():
@@ -78,4 +78,11 @@ def factor():
         if integer % i == 0:
             factors.append(i)
     print(factors)
-(factor())
+(factor())"""
+
+GCF = int(input("Give me a number. "))
+def integer():
+    factors = []
+    for i in range(1, integer+1):
+        if integer % i == 0:
+            factors.append(i)
