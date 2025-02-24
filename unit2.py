@@ -72,9 +72,10 @@ elif service == 'great':
     print('25%')"""
 
 integer = int(input("Give me an integer. "))
-def function(integer):
-    int_list = [1,2,3,4,5,6]
-    print(int_list)
-    for i in (int_list):
-        print(i) 
-function(integer)
+def factor():
+    factors = []
+    for i in range(1, integer+1):
+        if integer % i == 0:
+            factors.append(i)
+    print(factors)
+(factor())
