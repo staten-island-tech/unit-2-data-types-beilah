@@ -78,11 +78,10 @@ def factor():
         if integer % i == 0:
             factors.append(i)
     print(factors)
-(factor())"""
+(factor())
+"""
 
-GCF = int(input("Give me a number. "))
-def integer():
-    factors = []
-    for i in range(1, integer+1):
-        if integer % i == 0:
-            factors.append(i)
+num = int(input("Give me two numbers. "))
+def find_GCF():
+
+(find_GCF())
