@@ -6,6 +6,7 @@ age = 14
 graduated = False
 # Floats for decimal
 money = 4.50
+# List is list
 
 def add(x,y):
     print(x + y)
