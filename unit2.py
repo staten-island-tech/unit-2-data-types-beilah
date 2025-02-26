@@ -83,5 +83,7 @@ def factor():
 
 num = int(input("Give me two numbers. "))
 def find_GCF():
-
+    GCF = []
+    for i in range(1, num+1):
+        
 (find_GCF())
