@@ -81,9 +81,19 @@ def factor():
 (factor())
 """
 
-num = int(input("Give me two numbers. "))
-def find_GCF():
+def find_GCF(x,y):
+    xFactors = []
+    yFactors = []
     GCF = []
-    for i in range(1, num+1):
-        
-(find_GCF())
+    for i in range(1, x+1):
+        if x % i == 0:
+            xFactors.append(i)
+    for i in range(1, y+1):
+        if y % i == 0:
+            yFactors.append(i)
+    for factors in xFactors:
+        for factors in yFactors:
+            if xFactors[factors] == yFactors[factors]:
+                GCF.append(factors)
+    return max(xFactors) and (yFactors)
+print(find_GCF(6,9))
