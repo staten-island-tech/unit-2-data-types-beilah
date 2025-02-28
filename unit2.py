@@ -80,20 +80,29 @@ def factor():
     print(factors)
 (factor())
 """
+x = int(input("Give me a first value to find the GCF. "))
+y = int(input("Give me a second value. "))
 
-def find_GCF(x,y):
+def find_GCF():
+
     xFactors = []
     yFactors = []
     GCF = []
+
     for i in range(1, x+1):
         if x % i == 0:
             xFactors.append(i)
+
     for i in range(1, y+1):
         if y % i == 0:
             yFactors.append(i)
-    for factors in xFactors:
-        for factors in yFactors:
-            if xFactors[factors] == yFactors[factors]:
-                GCF.append(factors)
-    return max(xFactors) and (yFactors)
-print(find_GCF(6,9))
+
+    for j in range(len(xFactors)):
+        for k in range (len(yFactors)):
+            if xFactors[j] == yFactors[k]:
+                GCF.append(yFactors[1])
+    return max(GCF)
+
+gcf = find_GCF()
+
+print(f"The GCF of {x} and {y} is {gcf}")
