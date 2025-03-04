@@ -19,7 +19,6 @@ def ATM(balance, withdraw):
             break
 
         elif(exit == 'No'):
-            input('How much would you like to withdraw from your balance? ')
           
 (ATM(500, withdraw))
 
