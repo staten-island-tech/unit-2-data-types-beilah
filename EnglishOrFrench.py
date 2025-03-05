@@ -11,4 +11,4 @@ def lang(num, text):
         print("french")
     else:
         print("english")
-(lang(69, "Le chat dort sur le canapé près de la fenêtre."))
+lang(6699, "Si je discernais ta voix encore Connaissant ce coeur qui doute, Tu me dirais de tirer un trait Quoi que partir me coute.")
