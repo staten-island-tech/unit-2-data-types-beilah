@@ -1,32 +1,19 @@
-withdraw = input('How much would you like to withdraw from your balance? ')
+def ATM(balance):
 
-def ATM(balance, withdraw):
-
-    withdraw = (float(withdraw))
-
-    while balance > withdraw:
-
-        if withdraw > balance:
+    new_balance = balance
+    while True:
+        withdraw = float(input('How much would you like to withdraw from your balance? '))
+        
+        if withdraw > new_balance:
             print('Insufficient funds. Get back to work.')
 
-        elif balance >= withdraw:
-            New_Balance = balance - withdraw
-            print(f'Your balance is now {New_Balance}.')
+        elif new_balance >= withdraw:
+            new_balance = new_balance - withdraw
+            print(f'Your balance is now {new_balance}.')
 
         exit = input('Are you finished? Enter "Exit" if finished. ')
 
         if(exit == 'Exit'):
             break
-
-        elif(exit == 'No'):
-          
-(ATM(500, withdraw))
-
-"""if withdraw > balance:
-                print('Insufficient funds. Get back to work.')
-
-            elif balance >= withdraw:
-                New_Balance = balance - withdraw
-                print(f'Your balance is now {New_Balance}.')
-
-                input('Are you finished? ')"""
+       
+ATM(500)
