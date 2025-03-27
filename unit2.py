@@ -1,6 +1,6 @@
 # Unit 2
 
-"""x = 3
+x = 3
 y = float(3)
 print(x,y)
 
@@ -79,7 +79,7 @@ def factor():
             factors.append(i)
     print(factors)
 (factor())
-"""
+
 x = int(input("Give me a first value to find the GCF. "))
 y = int(input("Give me a second value. "))
 
